@@ -3,7 +3,7 @@ const path = require('path');
 // partials ko bhe hum ny alag folder me add kr deya hy usko hasil krny k leya humain hbs ko require krna pray ga
 const hbs = require('hbs');
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // public static path for static website
 // console.log(path.join(__dirname, '../public'));
